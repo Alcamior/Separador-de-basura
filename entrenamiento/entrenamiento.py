@@ -11,9 +11,9 @@ entrenamiento = "../dataset/entrenar"
 validacion = "../dataset/validar"
 
 #Definir los hiperparámetros
-epocas = 100
+epocas = 50
 altura,anchura = 50,50
-batch_size = 2
+batch_size = 8
 pasos = 100
 #Definir la profundidad de la red neuronal convolucional
 kernels1 = 16

@@ -32,7 +32,7 @@ def seleccionarImagen():
             tk.messagebox.showerror("Error", f"Ocurrió un error:\n{str(e)}")
 
 
-# Resto del código de la interfaz permanece igual...
+# Resto del código de la interfaz
 ventana = tk.Tk()
 ventana.title("Subir imagen")
 ventana.geometry("900x400")
