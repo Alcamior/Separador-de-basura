@@ -32,22 +32,22 @@ def mostrar_resultado():
 
 ventana = tk.Tk()
 ventana.title("Resultado")
-ventana.geometry("500x600")
-ventana.configure(bg="gray13")
+ventana.geometry("500x500")
+ventana.configure(bg="#5F8575")
 
-panel_imagen = tk.Label(ventana, bg="gray13")
+panel_imagen = tk.Label(ventana, bg="#5F8575")
 panel_imagen.pack(pady=10)
 
-lbl_imagen = tk.Label(ventana, text="Imagen:", fg="white", bg="gray13")
+lbl_imagen = tk.Label(ventana, text="Imagen:", fg="white", bg="#5F8575")
 lbl_imagen.pack()
 
-lbl_clase = tk.Label(ventana, text="Clase:", fg="white", bg="gray13")
+lbl_clase = tk.Label(ventana, text="Clase:", fg="white", bg="#5F8575")
 lbl_clase.pack()
 
-lbl_confianza = tk.Label(ventana, text="Confianza:", fg="white", bg="gray13")
+lbl_confianza = tk.Label(ventana, text="Confianza:", fg="white", bg="#5F8575")
 lbl_confianza.pack()
 
-lbl_error = tk.Label(ventana, text="", fg="red", bg="gray13")
+lbl_error = tk.Label(ventana, text="", fg="red", bg="#5F8575")
 lbl_error.pack()
 
 tk.Button(ventana, text="Cerrar", command=ventana.destroy).pack(pady=10)

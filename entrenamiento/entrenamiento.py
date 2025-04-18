@@ -20,7 +20,7 @@ kernels2 = 32
 kernel1_size = (3,3)
 kernel2_size = (3,3)
 size_pooling = (3,3)
-clases = 6
+clases = 5
 
 #Generar datos sintéticos para el entrenamiento
 
@@ -54,9 +54,9 @@ CNN.add(Dense(255,activation="relu"))
 #Segunda capa oculta
 CNN.add(Dense(255,activation="relu"))
 #Apagar un % de neuronas
-CNN.add(Dropout(0.6))
+CNN.add(Dropout(0.4))
 #Capa de salida
-CNN.add(Dense(6,activation="softmax"))
+CNN.add(Dense(5,activation="softmax"))
 
 #Establecer los parámetros iniciales del entrenamiento
 CNN.compile(loss="categorical_crossentropy",optimizer="adam",metrics=["acc","mse"])

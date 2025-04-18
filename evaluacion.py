@@ -29,11 +29,10 @@ try:
 
     etiquetas = {
         0: "Aluminio/Metal",
-        1: "Basura",
-        2: "Orgánico",
-        3: "Papel/Cartón",
-        4: "Plástico",
-        5: "Vidrio"
+        1: "Orgánico",
+        2: "Papel/Cartón",
+        3: "Plástico",
+        4: "Vidrio"
     }
 
     resultado = etiquetas.get(clase, "Desconocido")
