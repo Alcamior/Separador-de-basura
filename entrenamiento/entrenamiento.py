@@ -54,7 +54,7 @@ CNN.add(Dense(255,activation="relu"))
 #Segunda capa oculta
 CNN.add(Dense(255,activation="relu"))
 #Apagar un % de neuronas
-CNN.add(Dropout(0.4))
+CNN.add(Dropout(0.55))
 #Capa de salida
 CNN.add(Dense(5,activation="softmax"))
 
