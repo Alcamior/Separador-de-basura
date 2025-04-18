@@ -1,0 +1,4 @@
+Imagen: glass_20245.jpg
+Clase: Plástico
+Confianza: 74.65%
+Ruta: /Users/alecita/Desktop/8vocuatri/Sistemas inteligentes/EI/Separador-de-basura/dataset/probar/vidrio/glass_20245.jpg
