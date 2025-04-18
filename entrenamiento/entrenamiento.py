@@ -1,4 +1,3 @@
-
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras import optimizers
 from tensorflow.keras.models import Sequential
@@ -14,7 +13,7 @@ validacion = "../dataset/validar"
 epocas = 50
 altura,anchura = 50,50
 batch_size = 8
-pasos = 100
+pasos = 80
 #Definir la profundidad de la red neuronal convolucional
 kernels1 = 16
 kernels2 = 32
@@ -55,7 +54,7 @@ CNN.add(Dense(255,activation="relu"))
 #Segunda capa oculta
 CNN.add(Dense(255,activation="relu"))
 #Apagar un % de neuronas
-CNN.add(Dropout(0.5))
+CNN.add(Dropout(0.6))
 #Capa de salida
 CNN.add(Dense(6,activation="softmax"))
 

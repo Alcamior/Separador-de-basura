@@ -1,0 +1,4 @@
+Imagen: glass_1309.jpg
+Clase: Vidrio
+Confianza: 99.91%
+Ruta: /Users/alecita/Desktop/8vocuatri/Sistemas inteligentes/EI/Separador-de-basura/dataset/probar/vidrio/glass_1309.jpg

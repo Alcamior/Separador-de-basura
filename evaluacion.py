@@ -28,7 +28,7 @@ try:
     confianza = np.max(pred) * 100
 
     etiquetas = {
-        0: "Aluminio",
+        0: "Aluminio/Metal",
         1: "Basura",
         2: "Orgánico",
         3: "Papel/Cartón",
