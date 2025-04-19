@@ -21,7 +21,7 @@ kernels3 = 128
 kernel1_size = (3,3)
 kernel2_size = (3,3)
 kernel3_size = (3,3)
-size_pooling = (3,3)
+size_pooling = (2,2)
 clases = 5
 
 #Generar datos sintéticos para el entrenamiento
@@ -56,13 +56,13 @@ CNN.add(Flatten())
 
 #Conectar con un perceptron multicapa (MLP)
 #Primera capa oculta
-CNN.add(Dense(255,activation="relu"))
+CNN.add(Dense(128,activation="relu"))
 #Segunda capa oculta
-CNN.add(Dense(255,activation="relu"))
+CNN.add(Dense(64,activation="relu"))
 #Tercera capa oculta
-CNN.add(Dense(255,activation="relu"))
+CNN.add(Dense(32,activation="relu"))
 #Apagar un % de neuronas
-#CNN.add(Dropout(0.6))
+CNN.add(Dropout(0.55))
 #Capa de salida
 CNN.add(Dense(5,activation="softmax"))
 
