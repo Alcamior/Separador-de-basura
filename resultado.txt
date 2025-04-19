@@ -1,4 +1,4 @@
-Imagen: glass_20245.jpg
-Clase: PlÃ¡stico
-Confianza: 74.65%
-Ruta: /Users/alecita/Desktop/8vocuatri/Sistemas inteligentes/EI/Separador-de-basura/dataset/probar/vidrio/glass_20245.jpg
+Imagen: paper_444.jpg
+Clase: Papel/Cartón
+Confianza: 92.20%
+Ruta: D:/Documentos/UPEMOR/8vo cuatrimestre/Sistemas inteligentes/EI/dataset/probar/papel/paper_444.jpg

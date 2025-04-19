@@ -10,15 +10,17 @@ entrenamiento = "../dataset/entrenar"
 validacion = "../dataset/validar"
 
 #Definir los hiperparámetros
-epocas = 50
+epocas = 100
 altura,anchura = 50,50
 batch_size = 8
 pasos = 80
 #Definir la profundidad de la red neuronal convolucional
-kernels1 = 16
-kernels2 = 32
+kernels1 = 32
+kernels2 = 64
+kernels3 = 128
 kernel1_size = (3,3)
 kernel2_size = (3,3)
+kernel3_size = (3,3)
 size_pooling = (3,3)
 clases = 5
 
@@ -42,7 +44,11 @@ CNN.add(Convolution2D(kernels1,kernel1_size,padding="same",input_shape=(altura,a
 CNN.add(MaxPooling2D(pool_size=size_pooling))
 
 #Definir la segunda capa convolucional
-CNN.add(Convolution2D(kernels2,kernel2_size,padding="same",input_shape=(altura,anchura,3),activation="relu"))
+CNN.add(Convolution2D(kernels2,kernel2_size,padding="same",activation="relu"))
+CNN.add(MaxPooling2D(pool_size=size_pooling))
+
+#Definir la tercera capa convolucional
+CNN.add(Convolution2D(kernels3,kernel3_size,padding="same",activation="relu"))
 CNN.add(MaxPooling2D(pool_size=size_pooling))
 
 #Aplicar flatten
@@ -53,8 +59,10 @@ CNN.add(Flatten())
 CNN.add(Dense(255,activation="relu"))
 #Segunda capa oculta
 CNN.add(Dense(255,activation="relu"))
+#Tercera capa oculta
+CNN.add(Dense(255,activation="relu"))
 #Apagar un % de neuronas
-CNN.add(Dropout(0.55))
+#CNN.add(Dropout(0.6))
 #Capa de salida
 CNN.add(Dense(5,activation="softmax"))
 
