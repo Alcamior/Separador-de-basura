@@ -10,7 +10,7 @@ entrenamiento = "../dataset/entrenar"
 validacion = "../dataset/validar"
 
 #Definir los hiperparámetros
-epocas = 100
+epocas = 200
 altura,anchura = 50,50
 batch_size = 8
 pasos = 80
